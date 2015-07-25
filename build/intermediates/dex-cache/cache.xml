@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/grooshbene/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/home/grooshbene/2015_SK_Appjam/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-5f4af54e051cc1e9ed4b32c800a62a8594182c39.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/2015_SK_Appjam/app/build/intermediates/exploded-aar/com.kakao.sdk/util/1.0.40/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="966179f8655aa60a2a006c0b5226cb0f62dd4ed7">
+        <dex dex="/home/grooshbene/2015_SK_Appjam/app/build/intermediates/pre-dexed/debug/classes-16fda617b9269a64b15bbe67d252af899d55194c.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/2015_SK_Appjam/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.10.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="078cad8ebaa25b1eb1790bd622b3a8ae27c9cc7a">
+        <dex dex="/home/grooshbene/2015_SK_Appjam/app/build/intermediates/pre-dexed/debug/classes-a0d2ad62671d1e635940be8a8790b5a59f9a5164.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/.gradle/caches/modules-2/files-2.1/com.google.android/support-v4/r19/5896b0a4e377ac4242eb2bc785220c1c4fc052f4/support-v4-r19.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
+        <dex dex="/home/grooshbene/2015_SK_Appjam/app/build/intermediates/pre-dexed/debug/support-v4-r19-dcdf82709033eaca9bba3af1c3f5dc0bb4f4d36e.jar" />
+    </item>
+    <item
+        jar="/home/grooshbene/2015_SK_Appjam/app/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.0.40/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="ea3bdae7ee0c1e9e22d44c1ae8c2d3d3f7b2559e">
+        <dex dex="/home/grooshbene/2015_SK_Appjam/app/build/intermediates/pre-dexed/debug/classes-79ca0f320125df2fcbf7b25eef7c66707fe1e67d.jar" />
+    </item>
+
+</items>

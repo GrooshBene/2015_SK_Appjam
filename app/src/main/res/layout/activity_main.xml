@@ -2,11 +2,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    tools:context=".MainActivity"
+    android:background="#ff9495ee"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:id="@+id/splash">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="3.5"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:src="@drawable/main_logo"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1.7"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/touchtostart"
+            android:layout_weight="4"/>
+    </LinearLayout>
 
 </LinearLayout>

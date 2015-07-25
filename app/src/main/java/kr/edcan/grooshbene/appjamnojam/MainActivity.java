@@ -1,18 +1,61 @@
 package kr.edcan.grooshbene.appjamnojam;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.LinearLayout;
+
+import com.kakao.AppActionBuilder;
+import com.kakao.AppActionInfoBuilder;
+import com.kakao.KakaoLink;
+import com.kakao.KakaoParameterException;
+import com.kakao.KakaoTalkLinkMessageBuilder;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
+//    Button button;
+//    KakaoLink kakaoLink;
+//    KakaoTalkLinkMessageBuilder kakaoTalkLinkMessageBuilder;
+    LinearLayout splash;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        splash = (LinearLayout)findViewById(R.id.splash);
+        splash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MainActivity.this,Home.class);
+                startActivityForResult(intent,200);
+                finish();
+            }
+        });
+//        button = (Button) findViewById(R.id.asdf);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                try {
+//                    kakaoLink = KakaoLink.getKakaoLink(getApplicationContext());
+//                    kakaoTalkLinkMessageBuilder = kakaoLink.createKakaoTalkLinkMessageBuilder();
+//                    kakaoTalkLinkMessageBuilder.addText("널 지목하였다");
+//                    kakaoTalkLinkMessageBuilder.addAppLink("앱으로 이동합니다.", )
+//                    kakaoLink.sendMessage(kakaoTalkLinkMessageBuilder.build(), MainActivity.this);
+//                } catch (KakaoParameterException e) {
+//                    Log.e("error", e.getMessage());
+//                }
+//            }
+//        });
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
