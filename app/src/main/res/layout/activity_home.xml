@@ -101,38 +101,47 @@
         </LinearLayout>
 
     </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="#d8d8d8"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:src="@drawable/list"/>
+    </LinearLayout>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_weight="7.5">
+        android:layout_weight="6.5">
         <ListView
-            android:id="@+id/listv"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"></ListView>
+            android:layout_height="match_parent"
+            android:id="@+id/listv"></ListView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:weightSum="10"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_weight="2"
-                android:gravity="right"
-                android:orientation="horizontal"
-                android:weightSum="10">
-                <com.getbase.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/plus_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    fab:fab_icon="@drawable/heh"
-                    fab:fab_colorNormal="@color/white"
-                    fab:fab_colorPressed="@color/white_pressed"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="16dp" />
-            </LinearLayout>
+            android:gravity="bottom|right">
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/plus_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white_pressed"
+                fab:fab_icon="@drawable/heh"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"/>
         </LinearLayout>
     </FrameLayout>
+
 </LinearLayout>
